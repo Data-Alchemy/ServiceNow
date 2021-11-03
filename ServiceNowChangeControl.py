@@ -69,7 +69,7 @@ class UntitledTestCase(unittest.TestCase):
         self.driver.delete_all_cookies()
         self.email = email
         self.password = password
-        driver.get("https://ofg.service-now.com/nav_to.do?uri=%2Fchange_request.do%3FWIZARD:action%3Dfollow%26sys_action%3D%26sys_id%3D-1%26sys_target%3Dchange_request%26sysparm_query%3Dtype%3Dnormal%26sysparm_target%3D%26wiz_action%3Dsysverb_new")
+        driver.get(f'{url}')
         driver.maximize_window()
         email_element = driver.find_element_by_name('IDToken1')
         email_element.send_keys(self.email)  # Give keyboard input
