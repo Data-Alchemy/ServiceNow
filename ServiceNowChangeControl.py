@@ -10,8 +10,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 import datetime
 import time
 
-wndw_email = open('C:/Users/545001/Python_Automation/User.txt').read()
-wndw_pwd = open('C:/Users/545001/Python_Automation/Kys.txt').read()
+wndw_email = open('').read()
+wndw_pwd = open('').read()
 
 email=wndw_email
 password=wndw_pwd
